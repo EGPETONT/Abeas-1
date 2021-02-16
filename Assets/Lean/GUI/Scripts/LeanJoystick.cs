@@ -280,7 +280,7 @@ namespace Lean.Gui.Inspector
 			if (Any(t => t.Handle != null))
 			{
 				EditorGUI.indentLevel++;
-					Draw("dampening", "This allows you to control how quickly the joystick handle position updates\n\n-1 = instant.\n\nNOTE: This is for visual purposes only, the actual joystick <b>ScaledValue</b> will instantly update.");
+					Draw("damping", "This allows you to control how quickly the joystick handle position updates\n\n-1 = instant.\n\nNOTE: This is for visual purposes only, the actual joystick <b>ScaledValue</b> will instantly update.");
 					Draw("snapWhileHeld", "If you only want the smooth Dampening to apply when the joystick is returning to the center, then you can enable this.");
 				EditorGUI.indentLevel--;
 			}

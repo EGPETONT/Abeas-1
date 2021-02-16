@@ -21,7 +21,7 @@ namespace Lean.Gui
 		public float Multiplier { set { multiplier = value; } get { return multiplier; } } [SerializeField] private float multiplier = 1.0f;
 
 		/// <summary>This allows you to set the dampening of the <b>Strength</b> value. This decay slows down as it approaches 0.</summary>
-		public float Dampening { set { damping = value; } get { return damping; } } [FSA("Dampening")] [SerializeField] private float damping;
+		public float Damping { set { damping = value; } get { return damping; } } [FSA("Dampening")] [SerializeField] private float damping;
 
 		/// <summary>This allows you to set the reduction of the <b>Strength</b> value. This decay slows down at a constant rate per second.</summary>
 		public float Reduction { set { reduction = value; } get { return reduction; } } [SerializeField] private float reduction;
@@ -163,7 +163,7 @@ namespace Lean.Gui.Inspector
 			Draw("speed", "This allows you to set the speed of the shake animation.");
 			Draw("strength", "This allows you to set the current strength of the shake. This value can automatically decay based on the Dampening and Reduction settings.");
 			Draw("multiplier", "This allows you to set the final shake strength multiplier. This remains constant.");
-			Draw("dampening", "This allows you to set the dampening of the Strength value. This decay slows down as it approaches 0.");
+			Draw("damping", "This allows you to set the dampening of the Strength value. This decay slows down as it approaches 0.");
 			Draw("reduction", "This allows you to set the reduction of the Strength value. This decay slows down at a constant rate per second.");
 
 			EditorGUILayout.Separator();
